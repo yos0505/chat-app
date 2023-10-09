@@ -2,13 +2,13 @@
   display: flex;
 }
 
-.side_bar {
+.side-bar {
   width: 300px;
   height: 100vh;
   background-color: #253141;
 }
 
-.home {
+.side-bar-header {
   height: 100px;
   padding: 0 20px;
   background-color: #253141;
@@ -17,13 +17,13 @@
   align-items: center;
 }
 
-.name a{
+.header-name a {
   font-size: 16px;
   color: #FAFAFA;
   text-decoration: none;
 }
 
-.chat-button a{
+.create-room a {
   font-size: 10px;
   color: deepskyblue;
   border: 1px solid lightblue;
@@ -31,14 +31,14 @@
   text-decoration: none;
 
 }
-.top {
-  width: calc(100vh - 100px);
+.rooms {
+  height: calc(100vh - 100px);
   background-color: #2F3E51;
   padding: 0 20px;
   overflow: scroll;
 }
 
-.room{
+.room {
   padding: 20px 0 40px;
 }
 
@@ -52,11 +52,9 @@
   background-color: #ffffff;
 }
 
-.hedder {
+.chat-header {
   height: 100px;
   padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .group-name {
@@ -76,7 +74,7 @@
   padding: 20px ;
 }
 
-.talk-area {
+.messages {
   height: calc(100vh - 100px - 90px);
   background-color: #FAFAFA;
   padding: 46px 40px 0;
@@ -84,7 +82,7 @@
 }
 
 .message {
-  margin-bottom: 40px;
+  margin: 10px 0 0 0;
 }
 
 .upper-message {
@@ -94,22 +92,25 @@
 .name {
   font-size: 16px;
   color: #434A54;
-  margin-right: 10px;
 }
 
 .date {
   font-size: 12px;
   color: #999;
-  
+  padding-left: 10px;
 }
 
-.message1{
-  font-size: 14px;
-  color: #434A54;
+.lower-message {
   margin-top: 10px;
 }
 
-.fooder {
+.message-content {
+  font-size: 14px;
+  color: #434A54;
+  margin-bottom: 40px;
+}
+
+.form {
   height: 90px;
   background-color: #DDDDDD;
   padding: 20px 40px;
