@@ -1,14 +1,14 @@
 
-    <div class="home">
-      <div class="name">
+    <div class="side-bar-header">
+      <div class="header-name">
         <%= link_to current_user.name, edit_user_path(current_user) %>
       </div>
-      <div class="chat-button">
+      <div class="create-room">
         <%= link_to "チャットを作成する", new_room_path %>
       </div>
     </div>
 
-    <div class="top">
+    <div class="rooms">
       <% current_user.rooms.each do |room| %>
         <div class="room">
           <div class="room-name">
